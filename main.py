@@ -44,7 +44,7 @@ train_model(model, train_loader, val_loader, DEVICE, loss, optimizer, metrics, E
 best_model_path = './best_model_new.pt'
 best_model = load_model(best_model_path, DEVICE)
 
-image_path = './1.jpg'
+image_path = './test_example.jpg'
 predicted_mask = predict(best_model, image_path, DEVICE, transform)
 predicted_mask = predict(best_model, image_path, DEVICE, transform)
 predicted_mask = Image.fromarray(predicted_mask * 255)

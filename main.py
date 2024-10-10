@@ -23,7 +23,7 @@ image_filenames = os.listdir(image_dir)
 mask_filenames = os.listdir(mask_dir)
 
 transform = T.Compose([
-    T.Resize((256, 256)),
+    T.Resize((512, 512)),
     T.ToTensor(),
 ])
 
